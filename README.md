@@ -1,6 +1,6 @@
 # BridgeWars Plugin
 
-A professional BridgeWars plugin for Hypixel-styled Minecraft servers.
+A professional BridgeWars plugin for Zelvera MC.
 
 ## Features
 
@@ -14,7 +14,7 @@ A professional BridgeWars plugin for Hypixel-styled Minecraft servers.
 ## Installation
 
 1. Download the plugin JAR file
-2. Place it in your server's `plugins` folder
+2. Place it in the server's `plugins` folder
 3. Restart the server
 4. Configure arenas using admin commands
 
