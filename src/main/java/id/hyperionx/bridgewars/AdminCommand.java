@@ -36,7 +36,7 @@ public class AdminCommand implements CommandExecutor {
                     sender.sendMessage("§cArena not found!");
                     return true;
                 }
-                // Force start logic
+                // force start logic
                 sender.sendMessage("§aForce starting arena " + args[1] + "!");
                 break;
             case "stop":
