@@ -1,0 +1,26 @@
+name: BridgeWars
+version: 1.0.0
+main: id.hyperionx.bridgewars.Main
+api-version: 1.20
+authors: [Reyhan]
+description: A BridgeWars plugin for Zelvera Minecraft server.
+website: https://github.com/reyhan/bridgewars
+
+commands:
+  bridgewars:
+    description: Main BridgeWars command
+    aliases: [bw]
+    usage: /<command> [join|leave|stats|shop]
+  bwadmin:
+    description: Admin commands for BridgeWars
+    aliases: [bwa]
+    usage: /<command> [start|stop|reload]
+    permission: bridgewars.admin
+
+permissions:
+  bridgewars.admin:
+    description: Allows access to admin commands
+    default: op
+  bridgewars.play:
+    description: Allows playing BridgeWars
+    default: true
