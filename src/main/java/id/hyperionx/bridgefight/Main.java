@@ -20,6 +20,12 @@ public class Main extends JavaPlugin {
 
         // registers events
         getServer().getPluginManager().registerEvents(new GameListener(this), this);
+        // getServer().getPluginManager().registerEvents(new MenuListener(), this); // Uncomment when Citizens is installed
+
+        // Register Citizens trait if available
+        // if (Bukkit.getPluginManager().isPluginEnabled("Citizens")) {
+        //     CitizensAPI.getTraitFactory().registerTrait(TraitInfo.create(LobbyManager.ClickableTrait.class));
+        // }
 
         // loads configurations
         saveDefaultConfig();

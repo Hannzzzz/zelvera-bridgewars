@@ -22,6 +22,7 @@ public class Arena {
     private int minPlayers = 2;
     private int countdown = 30;
     private final Main plugin;
+    private LobbyManager lobbyManager;
 
     public Arena(String name, FileConfiguration config) {
         this.name = name;
@@ -48,6 +49,9 @@ public class Arena {
     private void loadFromConfig(FileConfiguration config) {
         // Load locations, teams, etc.
         // Implementation omitted for brevity
+        if (lobbyLocation != null) {
+            this.lobbyManager = new LobbyManager(plugin, lobbyLocation);
+        }
     }
 
     public void save(File file) throws IOException {
@@ -212,5 +216,11 @@ public class Arena {
 
     public Set<UUID> getPlayers() {
         return players;
+    }
+
+    public void shutdown() {
+        if (lobbyManager != null) {
+            lobbyManager.destroy();
+        }
     }
 }
