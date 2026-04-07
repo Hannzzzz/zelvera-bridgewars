@@ -1,6 +1,6 @@
 # BridgeFight Plugin
 
-A professional BridgeFight minigame plugin for Minecraft servers. Supports Minecraft 1.8.8+ with Java 8 compatibility.
+A professional BridgeFight minigame plugin made for Zelvera Network. Supports Minecraft 1.8.8+ with Java 8 compatibility.
 
 ## Features
 
