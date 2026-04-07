@@ -40,10 +40,10 @@ public class Arena {
         this.name = name;
         this.plugin = plugin;
         // Default teams
-        teams.add(new Team("Red", ChatColor.RED, Material.RED_WOOL));
-        teams.add(new Team("Blue", ChatColor.BLUE, Material.BLUE_WOOL));
-        teams.add(new Team("Green", ChatColor.GREEN, Material.GREEN_WOOL));
-        teams.add(new Team("Yellow", ChatColor.YELLOW, Material.YELLOW_WOOL));
+        teams.add(new Team("Red", ChatColor.RED, (byte)14));
+        teams.add(new Team("Blue", ChatColor.BLUE, (byte)11));
+        teams.add(new Team("Green", ChatColor.GREEN, (byte)5));
+        teams.add(new Team("Yellow", ChatColor.YELLOW, (byte)4));
     }
 
     private void loadFromConfig(FileConfiguration config) {
@@ -187,9 +187,9 @@ public class Arena {
     private void giveKit(Player player) {
         player.getInventory().clear();
         // Basic kit: sword, pickaxe, blocks
-        player.getInventory().addItem(new org.bukkit.inventory.ItemStack(Material.WOODEN_SWORD));
-        player.getInventory().addItem(new org.bukkit.inventory.ItemStack(Material.WOODEN_PICKAXE));
-        player.getInventory().addItem(new org.bukkit.inventory.ItemStack(Material.WHITE_WOOL, 64));
+        player.getInventory().addItem(new org.bukkit.inventory.ItemStack(Material.WOOD_SWORD));
+        player.getInventory().addItem(new org.bukkit.inventory.ItemStack(Material.WOOD_PICKAXE));
+        player.getInventory().addItem(new org.bukkit.inventory.ItemStack(Material.WOOL, 64));
         player.getInventory().setHelmet(new org.bukkit.inventory.ItemStack(Material.LEATHER_HELMET));
         player.getInventory().setChestplate(new org.bukkit.inventory.ItemStack(Material.LEATHER_CHESTPLATE));
         player.getInventory().setLeggings(new org.bukkit.inventory.ItemStack(Material.LEATHER_LEGGINGS));

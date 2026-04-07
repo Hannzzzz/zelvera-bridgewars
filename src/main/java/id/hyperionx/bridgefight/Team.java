@@ -12,16 +12,16 @@ public class Team {
 
     private final String name;
     private final ChatColor color;
-    private final Material woolColor;
+    private final byte woolData;
     private final Set<Player> players = new HashSet<>();
     private Location spawnLocation;
     private Location nexusLocation;
     private boolean nexusAlive = true;
 
-    public Team(String name, ChatColor color, Material woolColor) {
+    public Team(String name, ChatColor color, byte woolData) {
         this.name = name;
         this.color = color;
-        this.woolColor = woolColor;
+        this.woolData = woolData;
     }
 
     public String getName() {
@@ -32,8 +32,8 @@ public class Team {
         return color;
     }
 
-    public Material getWoolColor() {
-        return woolColor;
+    public byte getWoolData() {
+        return woolData;
     }
 
     public Set<Player> getPlayers() {
