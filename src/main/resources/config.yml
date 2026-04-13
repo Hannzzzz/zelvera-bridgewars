@@ -1,1 +1,55 @@
-#a
+settings:
+  prefix: "&6&lZELVERA &8» "
+  min-players: 2
+  max-players: 8
+  countdown: 10
+  max-score: 5
+  respawn-delay: 3
+
+lobby:
+  world: world
+  spawn: 0,100,0
+
+arenas:
+  arena1:
+    display-name: "Arena 1"
+    world: world
+
+    spawns:
+      red: 0,100,0
+      blue: 10,100,0
+
+    goals:
+      red: 5,100,0
+      blue: 15,100,0
+
+    max-players: 8
+
+  arena2:
+    display-name: "Arena 2"
+    world: world
+
+    spawns:
+      red: 20,100,0
+      blue: 30,100,0
+
+    goals:
+      red: 25,100,0
+      blue: 35,100,0
+
+    max-players: 8
+
+messages:
+  join: "&aYou joined %arena%"
+  leave: "&cYou left the game"
+  game-start: "&aGame started!"
+  game-end: "&eGame ended!"
+  not-enough-players: "&cNot enough players"
+  arena-full: "&cArena is full!"
+  already-started: "&cGame already started!"
+
+items:
+  selector:
+    material: COMPASS
+    name: "&aSelect Mode"
+    slot: 0
