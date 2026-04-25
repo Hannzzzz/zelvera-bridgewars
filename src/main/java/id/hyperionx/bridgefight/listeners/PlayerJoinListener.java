@@ -6,6 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -26,5 +27,12 @@ public void onJoin(PlayerJoinEvent e) {
     item.setItemMeta(meta);
 
     player.getInventory().setItem(0,item);
+}
+
+
+@EventHandler
+public void onQuit (PlayerQuitEvent e) {
+    Player player = e.getPlayer();
+    player.getInventory().clear(); // Clear inventory on leave
 }
 }
